@@ -9,23 +9,23 @@
 Есть четкое разделение на умные и глупые компоненты
 
 Есть рендеринг списков
-[в полном описании фильма](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/components/Movie/Movie.js)
+[в полном описании фильма](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/components/Movie/Movie.js)
 
 Реализована хотя бы одна форма
-[форма регистрации/авторизации](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/components/Login/Login.js)
+[форма регистрации/авторизации](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/components/Login/Login.js)
 
 Есть применение Контекст API
-[смена цветовой темы описания фильма](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/components/App/App.js)
+[смена цветовой темы описания фильма](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/components/App/App.js)
 
 Есть применение предохранителя
-[ErrorBoundary](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/components/ErrorBoundary/ErrorBoundary.js)
+[ErrorBoundary](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/components/ErrorBoundary/ErrorBoundary.js)
 
 Есть хотя бы один кастомный хук
-[useFetch](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/hooks/useFetch.js)
+[useFetch](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/hooks/useFetch.js)
 
 Хотя бы несколько компонентов используют PropTypes
-[Movie](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/components/Movie/Movie.js)
-[Card](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/components/Card/Card.js)
+[Movie](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/components/Movie/Movie.js)
+[Card](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/components/Card/Card.js)
 
 Поиск не должен триггерить много запросов к серверу
 
@@ -34,16 +34,16 @@
 ## Redux
 
 Используем Modern Redux with Redux Toolkit
-[store](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/store/index.js)
+[store](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/store/index.js)
 
 Используем слайсы
-[userSlice](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/store/slices/userSlice.js)
+[userSlice](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/store/slices/userSlice.js)
 
 Есть хотя бы одна кастомная мидлвара
-[userMiddleware](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/middleware/userMiddleware.js)
+[userMiddleware](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/middleware/userMiddleware.js)
 
 Используется RTK Query
-[moviesApi](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/api/MoviesApi.js)
+[moviesApi](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/api/MoviesApi.js)
 
 Используется Transforming Responses
-[moviesApi](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/api/MoviesApi.js)
+[moviesApi](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/api/MoviesApi.js)
