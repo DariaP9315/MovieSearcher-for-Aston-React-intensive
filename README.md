@@ -9,23 +9,23 @@
 Есть четкое разделение на умные и глупые компоненты
 
 Есть рендеринг списков
-[в полном описании фильма](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/components/Movie/Movie.js)
+[в полном описании фильма](http://example.com)
 
 Реализована хотя бы одна форма
-[форма регистрации/авторизации](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/components/Login/Login.js)
+[форма регистрации/авторизации](http://example.com)
 
 Есть применение Контекст API
-[смена цветовой темы описания фильма](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/components/App/App.js)
+[смена цветовой темы описания фильма](http://example.com)
 
 Есть применение предохранителя
-[ErrorBoundary](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/components/ErrorBoundary/ErrorBoundary.js)
+[ErrorBoundary](http://example.com)
 
 Есть хотя бы один кастомный хук
-[useFetch](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/hooks/useFetch.js)
+[useFetch](http://example.com)
 
 Хотя бы несколько компонентов используют PropTypes
-[Movie](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/components/Movie/Movie.js)
-[Card](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/components/Card/Card.js)
+[Movie](http://example.com)
+[Card](http://example.com)
 
 Поиск не должен триггерить много запросов к серверу
 
@@ -34,16 +34,16 @@
 ## Redux
 
 Используем Modern Redux with Redux Toolkit
-[store](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/store/index.js)
+[store](http://example.com)
 
 Используем слайсы
-[userSlice](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/store/slices/userSlice.js)
+[userSlice](http://example.com)
 
 Есть хотя бы одна кастомная мидлвара
-[userMiddleware](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/middleware/userMiddleware.js)
+[userMiddleware](http://example.com)
 
 Используется RTK Query
-[moviesApi](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/api/MoviesApi.js)
+[moviesApi](http://example.com)
 
 Используется Transforming Responses
-[moviesApi](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/api/MoviesApi.js)
+[moviesApi](http://example.com)
