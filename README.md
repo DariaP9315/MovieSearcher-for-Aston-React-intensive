@@ -9,23 +9,23 @@
 Есть четкое разделение на умные и глупые компоненты
 
 Есть рендеринг списков
-[в полном описании фильма](http://example.com)
+[в полном описании фильма](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/components/Movie/Movie.js)
 
 Реализована хотя бы одна форма
-[форма регистрации/авторизации](http://example.com)
+[форма регистрации/авторизации](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/components/Login/Login.js)
 
 Есть применение Контекст API
-[смена цветовой темы описания фильма](http://example.com)
+[смена цветовой темы описания фильма](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/components/App/App.js)
 
 Есть применение предохранителя
-[ErrorBoundary](http://example.com)
+[ErrorBoundary](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/components/ErrorBoundary/ErrorBoundary.js)
 
 Есть хотя бы один кастомный хук
-[useFetch](http://example.com)
+[useFetch](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/hooks/useFetch.js)
 
 Хотя бы несколько компонентов используют PropTypes
-[Movie](http://example.com)
-[Card](http://example.com)
+[Movie](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/components/Movie/Movie.js)
+[Card](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/components/Card/Card.js)
 
 Поиск не должен триггерить много запросов к серверу
 
@@ -34,16 +34,16 @@
 ## Redux
 
 Используем Modern Redux with Redux Toolkit
-[store](http://example.com)
+[store](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/store/index.js)
 
 Используем слайсы
-[userSlice](http://example.com)
+[userSlice](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/store/slices/userSlice.js)
 
 Есть хотя бы одна кастомная мидлвара
-[userMiddleware](http://example.com)
+[userMiddleware](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/middleware/userMiddleware.js)
 
 Используется RTK Query
-[moviesApi](http://example.com)
+[moviesApi](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/api/MoviesApi.js)
 
 Используется Transforming Responses
-[moviesApi](http://example.com)
+[moviesApi](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/api/MoviesApi.js)

@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { SavedMovie } from '../SavedMovie/SavedMovie';
 import { getUsername } from '../../store/slices/userSlice';
 import movieApi from '../../api/MovieApi';
+import { APIKey } from 'api/MovieApiKey';
 
 import './SavedMovies.css';
 
@@ -22,11 +23,9 @@ export function SavedMovies() {
 
   useEffect(() => {
     const fetchMovies = async (movieId) => {
-      const response = await movieApi
-        .get(`?apiKey=${process.env.REACT_APP_API_KEY_OMDB}&i=${movieId}`)
-        .catch((err) => {
-          console.log('Error:', err);
-        });
+      const response = await movieApi.get(`?apiKey=${APIKey}&i=${movieId}`).catch((err) => {
+        console.log('Error:', err);
+      });
       setList((prev) => [...prev, response.data]);
     };
 
