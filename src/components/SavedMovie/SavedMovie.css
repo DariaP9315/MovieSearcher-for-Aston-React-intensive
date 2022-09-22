@@ -1,0 +1,44 @@
+.favorite__card {
+  display: flex;
+  width: 500px;
+  height: auto;
+  max-height: 300px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  color: #3f3f3f;
+}
+
+.favorite__card_title {
+  color: #3f3f3f;
+  max-width: 90%;
+}
+
+.favorite__card_image {
+  width: auto;
+  height: 100%;
+  margin-right: 15px;
+  border-radius: 10px 0 0 10px;
+}
+
+.favorite__card_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.favorite__card_link {
+  color: #3f3f3f;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  margin-bottom: 20px;
+  justify-self: left;
+  width: auto;
+}
+
+.favorite__card_link:hover {
+  text-decoration: underline;
+  color: #5efff5;
+}
