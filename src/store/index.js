@@ -11,14 +11,3 @@ export const store = configureStore({
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat([moviesAPI.middleware, userMiddleware]),
 });
-
-const saveState = (state) => {
-  try {
-    const serialisedState = JSON.stringify(state);
-    window.localStorage.setItem('app_state', serialisedState);
-  } catch (err) {}
-};
-
-store.subscribe(() => {
-  saveState(store.getState());
-});

@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-
 import { removeFromUserFavorites } from '../../store/slices/userSlice';
-
-//import './FavoritesCard.css';
+import './SavedMovie.css';
 
 export function SavedMovie(movie) {
   const [removeActive, setRemoveActive] = useState(true);
@@ -20,6 +18,9 @@ export function SavedMovie(movie) {
     imdbRating,
   } = movie;
 
+  const runtimeIsNum = runtime.replace(/[^+\d]/g, '');
+  const hoursDuration = ((runtimeIsNum / 60) | 0) + ' h ' + (runtimeIsNum % 60) + ' min';
+
   const handleClick = () => {
     dispatch(removeFromUserFavorites(`${imdbID}`));
     setRemoveActive(() => !removeActive);
@@ -27,22 +28,17 @@ export function SavedMovie(movie) {
 
   return (
     <div className="favorite__card" key={imdbID}>
-      <Link to={`/movie-full/${imdbID}`}>
+      <Link to={`/movie-full/${imdbID}`} className="favorite__card_container">
         <img className="favorite__card_image" src={poster} alt={title}></img>
-        <div className="favorite__card_info">
+        <div className="favorite__card_description">
           <h2 className="favorite__card_title">{title}</h2>
-          <p className="favorite__card_text">
-            <i>
-              {year} / {imdbRating}
-            </i>
-          </p>
+          <p className="favorite__card_year">{year}</p>
+          <p className="favorite__card_year">{imdbRating}</p>
           <p className="favorite__card_text">{actors}</p>
-          <p className="favorite__card_text">{runtime}</p>
+          {runtimeIsNum !== 0 ? <p>{hoursDuration}</p> : ''}
         </div>
       </Link>
-      <button
-        className={removeActive ? 'remove-from-favorites active' : 'remove-from-favorites'}
-        onClick={handleClick}></button>
+      <button className="favorite__card_delete-btn" onClick={handleClick}></button>
     </div>
   );
 }

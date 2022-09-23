@@ -1,9 +1,9 @@
 export const userMiddleware = (store) => (next) => (action) => {
   let result;
   let currentStore = store.getState();
-  const userObjInLocalStorage = JSON.parse(localStorage.getItem(`${currentStore.user.email}`));
+  const userObjInLocalStorage = JSON.parse(localStorage.getItem(`${currentStore.user.username}`));
 
-  if (action.type === 'user/userSignUp' || action.type === 'user/userLogin') {
+  if (action.type === 'user/userSignUp' || action.type === 'user/userLogIn') {
     const usernameInLocalStorage = JSON.parse(localStorage.getItem(`${action.payload.username}`));
 
     if (action.type === 'user/userSignUp') {
@@ -16,13 +16,12 @@ export const userMiddleware = (store) => (next) => (action) => {
             username: action.payload.username,
             password: action.payload.password,
             favorites: {},
-            history: {},
           }),
         );
 
         result = next(action);
       }
-    } else if (action.type === 'user/userLogin') {
+    } else if (action.type === 'user/userLogIn') {
       if (usernameInLocalStorage) {
         if (usernameInLocalStorage.password === action.payload.password) {
           result = next(action);
@@ -35,11 +34,9 @@ export const userMiddleware = (store) => (next) => (action) => {
     }
   } else if (
     action.type === 'user/toUserFavorites' ||
-    action.type === 'user/toUserHistory' ||
     action.type === 'user/removeFromUserFavorites'
   ) {
     const favoritesObj = userObjInLocalStorage.favorites;
-    const historyObj = userObjInLocalStorage.history;
 
     if (action.type === 'user/toUserFavorites') {
       if (!favoritesObj[action.payload]) {
@@ -49,19 +46,14 @@ export const userMiddleware = (store) => (next) => (action) => {
       if (favoritesObj[action.payload]) {
         delete favoritesObj[action.payload];
       }
-    } else if (action.type === 'user/toUserHistory') {
-      if (!historyObj[action.payload]) {
-        if (action.payload.trim().length > 0) {
-          historyObj[action.payload] = true;
-        }
-      }
     }
 
     localStorage.setItem(
       currentStore.user.username,
       JSON.stringify({
+        username: currentStore.user.username,
+        password: currentStore.user.userPassword,
         favorites: favoritesObj,
-        history: historyObj,
       }),
     );
 

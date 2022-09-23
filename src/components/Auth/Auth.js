@@ -1,20 +1,27 @@
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Auth.css';
 
 export default function Auth() {
+  const navigate = useNavigate();
   return (
     <div className="auth__container">
-      <Link to="/signin">
-        <button className="auth__button" type="button">
-          Signin
-        </button>
-      </Link>
+      <button
+        className="auth__button"
+        type="submit"
+        onClick={() => {
+          navigate('/signin');
+        }}>
+        Signin
+      </button>
 
-      <Link to="/signup">
-        <button className="auth__button" type="button">
-          Signup
-        </button>
-      </Link>
+      <button
+        className="auth__button"
+        type="submit"
+        onClick={() => {
+          navigate('/signup');
+        }}>
+        Signup
+      </button>
     </div>
   );
 }

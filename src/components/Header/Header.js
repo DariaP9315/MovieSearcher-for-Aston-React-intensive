@@ -4,7 +4,7 @@ import './Header.css';
 import Menu from '../Menu/Menu';
 import Auth from '../Auth/Auth';
 import logo from '../../images/logo.svg';
-import Account from '../Account/Account';
+import { Account } from '../Account/Account';
 import { isUserAuth } from '../../store/slices/userSlice';
 import { useSelector } from 'react-redux';
 

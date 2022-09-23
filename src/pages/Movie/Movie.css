@@ -1,0 +1,144 @@
+.movie__full {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+
+  max-height: max-content;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+
+.movie__full_about {
+  display: flex;
+  gap: 30px;
+  color: #fff;
+  padding: 10px;
+}
+
+.movie__full_poster {
+  max-width: 400px;
+  border-radius: 10px;
+  max-height: 520px;
+}
+
+.movie__full_description {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.movie__full_rating {
+  font-weight: bold;
+  color: rgb(83, 246, 83);
+  font-size: 1.3rem;
+}
+
+.movie__full_genres {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.movie__full_genre {
+  margin-right: 15px;
+  padding: 7px 13px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+}
+
+.movie__full_genre:last-child {
+  margin-right: 0;
+}
+
+.movie__full_title-and-like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie__full_title {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.movie__full_like {
+  background-image: url(../../images/like.svg);
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.movie__full_like-active {
+  background-image: url(../../images/like-active.svg);
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.movie__full_country {
+  margin-right: 10px;
+}
+
+.theme-toggler {
+  display: inline-block;
+  padding: 5px 10px;
+  /* margin: 0px 10px 30px 0px; */
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.movie__full.light {
+  background-color: rgba(255, 255, 255, 0.7);
+
+  border-radius: 10px;
+}
+
+.movie__full.light .movie__full_about {
+  padding: 10px;
+  color: #3f3f3f;
+}
+
+.movie__full.light .movie__full_genre {
+  border: 2px solid #3f3f3f;
+}
+
+.movie__full.light .back {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.movie__full.light .theme-toggler {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.movie__full_title-and-like {
+  align-items: center;
+}
+
+.movie__full_btn-save {
+  margin-left: 10px;
+  width: 60px;
+  height: 60px;
+  color: #000;
+  background-image: url('../../images/like.svg');
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+}

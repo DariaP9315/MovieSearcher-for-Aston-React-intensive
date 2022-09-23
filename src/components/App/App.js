@@ -4,24 +4,21 @@ import { isUserAuth } from '../../store/slices/userSlice';
 import { useSelector } from 'react-redux';
 
 import './App.css';
-import Main from '../Main/Main';
-import { Login } from '../Login/Login';
-import { Register } from '../Register/Register';
-import PageNotFound from '../PageNotFound/PageNotFound';
+import Main from '../../pages/Main/Main';
+import { Login } from '../../pages/Login/Login';
+import { Register } from '../../pages/Register/Register';
+import PageNotFound from '../../pages/PageNotFound/PageNotFound';
 import Header from '../Header/Header';
-import { SearchResults } from '../SearchResults/SearchResults';
-import { Movie } from '../Movie/Movie';
-import { SavedMovies } from '../SavedMovies/SavedMovies';
+import { SearchResults } from '../../pages/SearchResults/SearchResults';
+import { Movie } from '../../pages/Movie/Movie';
+import { SavedMovies } from '../../pages/SavedMovies/SavedMovies';
 import { ErrorBoundary } from '../ErrorBoundary/ErrorBoundary';
 
 function App() {
   const navigate = useNavigate();
   const [theme, setTheme] = useState('dark');
-  const [token, setToken] = useState();
   const isAuth = useSelector(isUserAuth);
-  if (token) {
-    return <Login setToken={setToken} />;
-  }
+
   return (
     <ErrorBoundary>
       <ThemeContext.Provider value={{ theme, setTheme }}>
@@ -35,7 +32,6 @@ function App() {
             ) : (
               <Route exact path="/" element={<Main />} />
             )}
-
             <Route path="/signup" element={<Register />} />
             <Route path="*" element={<PageNotFound navigate={navigate} />} />
             <Route path="/search/:name" element={<SearchResults />} />

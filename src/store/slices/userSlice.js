@@ -11,7 +11,6 @@ const userSlice = createSlice({
     errorText: '',
     redirect: false,
     userFavorites: {},
-    userHistory: {},
   },
 
   reducers: {
@@ -52,24 +51,11 @@ const userSlice = createSlice({
     removeFromUserFavorites(state, action) {
       delete state.userFavorites[action.payload];
     },
-    toUserHistory(state, action) {
-      if (!state.userHistory[action.payload]) {
-        if (action.payload.trim().length > 0) {
-          state.userHistory[action.payload] = true;
-        }
-      }
-    },
   },
 });
 
-export const {
-  userSignUp,
-  userLogIn,
-  userLogOut,
-  toUserFavorites,
-  removeFromUserFavorites,
-  toUserHistory,
-} = userSlice.actions;
+export const { userSignUp, userLogIn, userLogOut, toUserFavorites, removeFromUserFavorites } =
+  userSlice.actions;
 
 export const getUsername = (state) => state.user.username;
 export const isUserAuth = (state) => state.user.isUserRegistered;
