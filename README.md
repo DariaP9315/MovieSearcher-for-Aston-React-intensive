@@ -29,7 +29,7 @@
 
 Поиск не должен триггерить много запросов к серверу [useDebounce](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/hooks/useDebounce.js)
 
-Есть применение lazy + Suspense [Main] (https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/pages/Main/Main.js)
+Есть применение lazy + Suspense [Main](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/pages/Main/Main.js)
 
 ## Redux
 
