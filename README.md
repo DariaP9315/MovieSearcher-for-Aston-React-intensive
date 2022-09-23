@@ -1,6 +1,6 @@
 # MOVIESearcher project for Aston trainee program
 
-Проект представляет собой обычный поисковик фильмов с функцией поиска по названию, по типу. Можно завести аккаунт и сохранять фильмы в избранное (на данный момент не до конца реализовано)
+Проект представляет собой обычный поисковик фильмов с функцией поиска по названию, по типу. Можно завести аккаунт и сохранять фильмы в избранное.
 
 ## React
 
@@ -27,9 +27,9 @@
 [Movie](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/components/Movie/Movie.js)
 [Card](https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/create-project/src/components/Card/Card.js)
 
-Поиск не должен триггерить много запросов к серверу
+Поиск не должен триггерить много запросов к серверу [useDebounce] (https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/hooks/useDebounce.js)
 
-Есть применение lazy + Suspense
+Есть применение lazy + Suspense [Main] (https://github.com/DariaP9315/MovieSearcher-for-Aston-React-intensive/blob/main/src/pages/Main/Main.js)
 
 ## Redux
 
